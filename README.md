@@ -4,7 +4,7 @@ Personal academic homepage for Jiachen Zhao, a PhD student at Northeastern
 University. Hand-written static HTML / CSS / vanilla JavaScript — no
 framework, no build step.
 
-- **Live site:** https://andotalao24.github.io/
+
 - **Author:** Jiachen Zhao
 - **Class:** _(replace with the course's Canvas / syllabus link)_
 
