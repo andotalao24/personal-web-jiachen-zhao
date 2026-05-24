@@ -1,0 +1,260 @@
+:root {
+  --fg: #222;
+  --muted: #666;
+  --link: #2a6df4;
+  --border: #e5e5e5;
+  --bg: #fff;
+  --max: 820px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+nav.top {
+  border-bottom: 1px solid var(--border);
+}
+nav.top .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+nav.top a {
+  color: var(--fg);
+  font-weight: 500;
+}
+nav.top a.active {
+  color: var(--link);
+}
+
+header.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+header.profile img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+header.profile h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+}
+header.profile .sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 2.2rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.5rem;
+  color: var(--muted);
+}
+
+p {
+  margin: 0.6rem 0;
+}
+
+ul.pubs,
+ul.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.pubs li,
+ul.projects li {
+  margin: 0 0 1.1rem;
+}
+.title {
+  font-weight: 600;
+}
+.me {
+  font-style: italic;
+}
+.venue {
+  color: var(--muted);
+}
+.links a {
+  margin-right: 0.5rem;
+}
+
+.project-block {
+  margin: 1.2rem 0 1.6rem;
+}
+.project-block .head {
+  font-weight: 600;
+}
+.project-block .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+.project-block ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+.project-block li {
+  margin: 0.25rem 0;
+}
+
+.pub-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 0.5rem 0 1.25rem;
+}
+.pub-search {
+  flex: 1 1 240px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+.pub-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.year-btn {
+  font: inherit;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  background: #fafafa;
+  color: var(--fg);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.year-btn:hover {
+  background: #f0f0f0;
+}
+.year-btn.active {
+  background: var(--link);
+  border-color: var(--link);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.muted-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.muted-note code {
+  background: #f4f4f4;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.gallery figure {
+  margin: 0;
+}
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+  aspect-ratio: 4 / 3;
+  cursor: default;
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.photo-card:hover img {
+  transform: scale(1.06);
+}
+
+.photo-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 60%);
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.photo-card:hover .photo-caption,
+.photo-card:focus-within .photo-caption {
+  opacity: 1;
+}
+.photo-caption strong {
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  header.profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  header.profile img {
+    width: 110px;
+    height: 110px;
+  }
+}
