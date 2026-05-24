@@ -19,12 +19,6 @@ Build a small, fast, easy-to-maintain personal site that:
    year-and-keyword publication filter).
 3. Stays small enough that updates are a single edit to one HTML file.
 
-## Screenshot
-
-![Homepage screenshot](docs/screenshot.png)
-
-> Take a screenshot of the rendered homepage and save it to
-> `docs/screenshot.png` to replace this placeholder.
 
 ## Pages
 
