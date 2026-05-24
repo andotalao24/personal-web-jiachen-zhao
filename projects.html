@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Research Projects — Jiachen Zhao</title>
+    <meta name="description" content="Research projects by Jiachen Zhao." />
+    <meta name="author" content="Jiachen Zhao" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="inner">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Research Projects</a>
+        <a href="photos.html">Photos (AI-generated)</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h2>Featured Projects</h2>
+
+      <div class="project-block">
+        <div class="head">Improving Fairness of Large Language Models</div>
+        <div class="meta">
+          June 2023 – Oct 2023 · supervised by Prof. Mengye Ren and Prof. James Zou
+        </div>
+        <ul>
+          <li>
+            Working on understanding the effects of supervised finetuning on LLMs for debiasing from
+            the view of continual learning.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <div class="head">Large Language Models for Clinical Applications</div>
+        <div class="meta">Feb 2023 – Feb 2024· supervised by Prof. Hong Yu</div>
+        <ul>
+          <li>
+            Working on automatic Chain-of-Thought generation for clinical QA to resolve shortage of
+            annotations.
+          </li>
+          <li>
+            Working on improving zero-shot QA performance by adding medical jargon to prompts.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <div class="head">Few-shot Parsing for Biomedical Texts</div>
+        <div class="meta">
+          Sep 2022 – Feb 2024 · supervised by Prof.
+          <a href="https://scholar.google.com/citations?user=yILa1y0AAAAJ">Andrew McCallum</a>
+        </div>
+        <ul>
+          <li>
+            Focused on few-shot constituency parsing. Worked on knowledge distillation from LLMs to
+            a smaller applicable language model (i.e., T5).
+          </li>
+          <li>
+            Worked on understanding the performance difference between student and teacher in
+            knowledge distillation, and on more effective KD methods to handle noise in teacher
+            labels.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <div class="head">Patella Segmentation for Early Detection of Osteoarthritis</div>
+        <div class="meta">
+          June 2021 – Feb 2022 · supervised by Prof.
+          <a href="https://scholar.google.com/citations?user=Z_t5DjwAAAAJ">Hao Chen</a>
+        </div>
+        <ul>
+          <li>
+            Increased the robustness and data-efficiency of CNNs by leveraging Statistical Shape
+            Models (SSM) for patella segmentation.
+          </li>
+          <li>
+            Implemented automated sampling and image registration to generate SSM. Proposed a metric
+            for predicting whether CNN or SSM performs better with no access to ground truth.
+            Proposed a fuzzy nearest-neighbor framework to integrate prior anatomical knowledge into
+            CNN-based segmentation.
+          </li>
+          <li>
+            Increased the Dice coefficient of mainstream CNN frameworks by ~1.7% on blind tests;
+            models reached comparable performance with half the training data.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-block">
+        <div class="head">Event Detection Without Triggers</div>
+        <div class="meta">
+          Sep 2021 – Jan 2022 · supervised by Prof.
+          <a href="https://hqyang.github.io/">Haiqin Yang</a>
+        </div>
+        <ul>
+          <li>
+            Worked on low-resource event detection without annotated trigger words. Reformulated the
+            classification task as reading comprehension.
+          </li>
+          <li>
+            Proposed an event derangement module to resolve imbalanced learning; performance on
+            minority events improved. Two patents under registration.
+          </li>
+          <li>
+            Trained on real large-scale data from Datastory and deployed in the company's product
+            for events detection on social media data, greatly reducing annotation cost.
+          </li>
+        </ul>
+      </div>
+
+      <footer>&copy; Jiachen Zhao</footer>
+    </main>
+  </body>
+</html>
