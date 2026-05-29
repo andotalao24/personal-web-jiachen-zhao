@@ -6,7 +6,7 @@ framework, no build step.
 
 - **link:** https://andotalao24.github.io/personal-web-jiachen-zhao/ 
 - **Author:** Jiachen Zhao
-- **Class:** _(replace with the course's Canvas / syllabus link)_
+- **Class:** https://johnguerra.co/classes/webDevelopment_online_summer_2026/
 
 ## Project objective
 
