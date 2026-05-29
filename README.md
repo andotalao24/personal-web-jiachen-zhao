@@ -44,8 +44,8 @@ Build a small, fast, easy-to-maintain personal site that:
 ├── images/                 avatar, favicon
 ├── files/                  PDFs linked from publications
 ├── photos/                 (drop user photos here)
-├── docs/
-│   ├── DESIGN.md           design document
+├── design_document/
+│   ├── design.md           design document
 │   └── mockups/            (optional design assets)
 ├── package.json            type=module, dev deps
 ├── eslint.config.js
@@ -124,7 +124,7 @@ The component is loaded as an ES module:
 
 ## Design document
 
-See [`docs/DESIGN.md`](docs/DESIGN.md) for the full design document —
+See [`design_document/design.md`](design_document/design.md) for the full design document —
 project description, user personas, user stories, and mockups.
 
 ## License
