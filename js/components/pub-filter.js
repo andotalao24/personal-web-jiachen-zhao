@@ -39,8 +39,12 @@ export function initPubFilter() {
 
   yearButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      yearButtons.forEach((b) => b.classList.remove('active'));
+      yearButtons.forEach((b) => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       activeYear = btn.dataset.year;
       applyFilter();
     });
